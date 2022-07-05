@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   text-align: center; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 2% 5%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: aliceblue;
+    padding: 20px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+nav ul{
+    display: flex;
+    gap: 100px;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: larger;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(32, 26, 26);
+}
+nav ul li a:hover{
+    color: brown;
+}
+.message-box{
+    display: block;
+    text-align: center;
+    margin-top: 20%;
+}
+.message-box h1{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form div{
+  margin-top: 20px;
+}
+form input{
+    width: 300px;
+    height: 40px;
+
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    background-color: chocolate;
+    color: cornflowerblue;
+    border: none;
+    cursor: pointer;
+}
+.feature{
+ display: block;
+ text-align: start; 
+ max-width: 700px;
+ margin: 0 auto;
+}
+.feature div{
+    margin: 40px;
+}
+.feature h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+    color: coral;
+}
+iframe{
+    width: 500px;
+    height: 300px;
+}
+.contain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+.price-box{
+    width: 300px;
+    height: 250px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: burlywood;
+}
+.price-box h2{
+    font-weight: 600;
+    font-size: larger;
+    margin-bottom: 30px;
+}
+.price-box h3{
+    font-style: italic;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.price-box p{
+   margin-bottom: 30px;
+}
+footer{
+    background-color: rgb(182, 173, 173);
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 35rem) {
+    nav{
+        display: block;
+        position: relative;
+    }
+    nav ul{
+        display: block;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    .contain{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
